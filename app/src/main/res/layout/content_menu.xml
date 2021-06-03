@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Menu"
+    tools:showIn="@layout/activity_menu" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B0A0A"
+        android:text="@string/menu"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/chicken_biryani"
+            android:onClick="clickChicken"
+            android:src="@drawable/tawapanner" />
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/fried_rice"
+            android:onClick="clickFriedRice"
+            android:src="@drawable/chickensukka" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/pizza"
+            android:onClick="clickPizza"
+            android:src="@drawable/prawnballs" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/french_fries"
+            android:onClick="clickFrenchFries"
+            android:src="@drawable/chickenfry" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/noodels"
+            android:onClick="clickNoodles"
+            android:src="@drawable/macroni" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:onClick="clickCrispy"
+            android:contentDescription="@string/crispychicken"
+            app:srcCompat="@drawable/crispychicken" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/paneerpopcorn"
+            android:onClick="clickPaneer"
+            app:srcCompat="@drawable/pannerpopcorn" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
